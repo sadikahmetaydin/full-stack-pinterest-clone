@@ -1,3 +1,4 @@
+import Image from "../Image/Image"
 import UserButton from "../UserButton/UserButton"
 import "./TopBar.css"
 
@@ -6,7 +7,7 @@ function TopBar() {
     <div className="topBar">
       {/* Search */}
       <div className="search">
-        <img src="/general/search.svg" alt="" />
+        <Image path="/general/search.svg" alt="" />
         <input type="text" placeholder="Search" />
       </div>
 
