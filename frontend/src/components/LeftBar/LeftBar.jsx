@@ -1,34 +1,35 @@
-import Image from "../Image/Image"
 import "./LeftBar.css"
+import Image from "../Image/Image"
+import { Link } from "react-router"
 
 function LeftBar() {
   return (
     <div className="leftBar">
       <div className="menuIcons">
-        <a href="/" className="menuIcon">
+        <Link to="/" className="menuIcon">
           <Image path="/general/logo.png" alt="" className="logo" />
-        </a>
+        </Link>
 
-        <a href="/" className="menuIcon">
+        <Link to="/" className="menuIcon">
           <Image path="/general/home.svg" alt="" />
-        </a>
+        </Link>
 
-         <a href="/" className="menuIcon">
+         <Link to="/create" className="menuIcon">
           <Image path="/general/create.svg" alt="" />
-        </a>
+        </Link>
 
-         <a href="/" className="menuIcon">
+         <Link to="/" className="menuIcon">
           <Image path="/general/updates.svg" alt="" />
-        </a>
+        </Link>
 
-         <a href="/" className="menuIcon">
+         <Link to="/" className="menuIcon">
           <Image path="/general/messages.svg" alt="" />
-        </a>
+        </Link>
       </div>
 
-       <a href="/">
+       <Link to="/">
           <Image path="/general/settings.svg" alt="" />
-        </a>
+        </Link>
     </div>
   )
 }
