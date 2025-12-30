@@ -51,6 +51,7 @@
   border-radius: 32px;
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .authContainer p {

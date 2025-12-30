@@ -27,7 +27,7 @@ function Comments({ id }) {
         ))}
       </div>
 
-      <CommentForm />
+      <CommentForm id={id} />
 
     </div>
   );
